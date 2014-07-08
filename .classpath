@@ -89,7 +89,7 @@
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.4.1.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/mapreduce/hadoop-mapreduce-client-jobclient-2.4.1-tests.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/mapreduce/hadoop-mapreduce-client-shuffle-2.4.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/mapreduce/hadoop-mapreduce-examples-2.4.1.jar" sourcepath="/usr/local/hadoop-2.4.1/share/hadoop/mapreduce/sources/hadoop-mapreduce-examples-2.4.1-sources.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/yarn/hadoop-yarn-api-2.4.1.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/yarn/hadoop-yarn-applications-distributedshell-2.4.1.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/yarn/hadoop-yarn-applications-unmanaged-am-launcher-2.4.1.jar"/>
