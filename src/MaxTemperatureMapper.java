@@ -14,7 +14,7 @@ public class MaxTemperatureMapper extends
 			throws IOException, InterruptedException {
 		String line = value.toString();
 		String year = line.substring(15, 19);
-		int airTemperature;
+		int airTemperature; 
 		if (line.charAt(87) == '+') { // parseInt doesn't like leading plus
 			// signs
 			airTemperature = Integer.parseInt(line.substring(88, 92));
