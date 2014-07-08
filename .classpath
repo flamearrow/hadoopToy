@@ -3,7 +3,7 @@
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/common/hadoop-common-2.4.1.jar"/>
-	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.4.1.jar"/>
+	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/mapreduce/hadoop-mapreduce-client-core-2.4.1.jar" sourcepath="/usr/local/hadoop-2.4.1/share/hadoop/mapreduce/sources/hadoop-mapreduce-client-core-2.4.1-sources.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/common/lib/activation-1.1.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/common/lib/asm-3.2.jar"/>
 	<classpathentry kind="lib" path="/usr/local/hadoop-2.4.1/share/hadoop/common/lib/avro-1.7.4.jar"/>
