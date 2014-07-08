@@ -16,7 +16,7 @@ public class MaxTemperatureDriver extends Configured implements Tool {
 			System.err
 					.println("Usage: MaxTemperatureDriver <input path> <outputpath>");
 			System.exit(-1);
-		}
+		} 
 
 		Job job = new Job();
 		job.setJarByClass(MaxTemperatureDriver.class);
