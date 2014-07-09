@@ -22,6 +22,9 @@ public class WordCount {
 		private final static IntWritable one = new IntWritable(1);
 		private Text word = new Text();
 
+		// each value is a line of the input file
+		// each key is the offset in bytes of the start of the line
+		// rewrite the (key, value) pair to intermediate result to context
 		public void map(Object key, Text value, Context context)
 				throws IOException, InterruptedException {
 			StringTokenizer itr = new StringTokenizer(value.toString());
@@ -35,7 +38,10 @@ public class WordCount {
 	public static class IntSumReducer extends
 			Reducer<Text, IntWritable, Text, IntWritable> {
 		private IntWritable result = new IntWritable();
-
+		
+		// key/values is whatever map() created, the shuffler has already merged the result
+		// so that the values of a particular key are already stored in place
+		// when context.write() is called, it's directly writing to output file
 		public void reduce(Text key, Iterable<IntWritable> values,
 				Context context) throws IOException, InterruptedException {
 			int sum = 0;
