@@ -16,6 +16,8 @@ public class SortReducer extends Reducer<IntWritable, Text, Text, IntWritable> {
 			itr.next();
 		}
 		Text k = new Text(key.toString());
-		context.write(k, new IntWritable(count));
+		// we can write nothing to value - key is sorted
+		// context.write(k, new IntWritable(count));
+		context.write(k, null);
 	}
 }
